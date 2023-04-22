@@ -6,12 +6,12 @@
     state: present
 
 - name: Symbolic link .zshrc from Dotfiles
-  #become_user: "{{ ansible_user }}"
-  become: true
+  become_user: "{{ ansible_user }}"
   file:
     src: "{{ role_path }}/files/.zshrc"
-    dest: "~/.zshrc"
+    dest: "{{ ansible_user_dir }}/.zshrc"
     state: link
+    force: true
 
 - name: Change default shell
   user:

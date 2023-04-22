@@ -1,0 +1,8 @@
+---
+packages_to_install:
+    - git
+    - sudo
+    - bash-completion
+    - htop
+    - nmap
+    - curl

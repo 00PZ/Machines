@@ -1,6 +1,6 @@
 ---
 # general settings
-ansible_user: styx
+ansible_user: vscode
 ansible_user_dir: "/home/{{ ansible_user }}"
 dotfiles_target: "{{ansible_user_dir}}/dotfiles"
 
