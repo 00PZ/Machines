@@ -23,7 +23,7 @@ jobs:
         pip install ansible ansible-lint
 
     - name: Lint Ansible playbook
-      run: ansible-lint playbook.yml
+      run: ansible-lint local.yml
 
   deploy_and_execute:
     needs: lint
