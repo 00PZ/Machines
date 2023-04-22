@@ -1,0 +1,18 @@
+---
+- hosts: localhost
+  gather_facts: yes
+  connection: local
+  become: true
+  vars_files:
+    - group_vars/all.yml
+    - group_vars/apt.yml
+  roles: # order is not random!
+    - role: common
+    # - role: node
+    # - role: input-remapper
+    #- role: nerd-fonts
+    - role: zsh
+    - role: oh-my-zsh
+    - role: powerlevel10k
+    - role: nvim
+    - role: docker

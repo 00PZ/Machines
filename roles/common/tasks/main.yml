@@ -1,0 +1,15 @@
+---
+- name: Upgrade packages
+  apt:
+    upgrade: full
+
+- name: Install packages
+  apt:
+    name: "{{packages_to_install}}"
+    state: present
+    update_cache: yes
+    allow_unauthenticated: yes
+
+- name: Show all variables
+  ansible.builtin.debug:
+    var: vars
