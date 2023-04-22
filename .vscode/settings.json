@@ -1,0 +1,14 @@
+{
+  "editor.fontFamily": "'Hack Nerd Font', 'monospace', monospace",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[prettier]": {},
+  "prettier.enable": true,
+  "yaml.schemas": {
+    "https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/ansible.json#/$defs/tasks": "file:///home/styx/git/Machines/roles/node/tasks/main.yml"
+  }
+}
